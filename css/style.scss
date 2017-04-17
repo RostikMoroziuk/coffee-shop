@@ -1,0 +1,203 @@
+@import url("../font/stylesheet.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$blockWidth: 85%;
+$textColor: #dc3413;
+$mainTextColor: #cc9966;
+$backgroundColor: #281c13;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: $textColor;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: url("../img/beans-coffee-kitchen-2742.jpg") repeat-y;
+  background-size: 100% 100%;
+}
+
+main,
+footer {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.navigation,
+#main,
+#about-cafe,
+#coffee,
+#menu,
+#blog,
+#contact {
+  width: $blockWidth;
+}
+
+
+/*NAVIGATION*/
+
+.navigation {
+  height: 180px; //3.5%;
+  display: flex;
+  position: fixed;
+  .coffee-shop {
+    height: 100%;
+    width: 30%;
+    position: relative;
+    background-color: $textColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    img {
+      width: 100%;
+    }
+  }
+  .page-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColor;
+    width: 70%;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
+.page-menu {
+  h3 {
+    font-family: "28 Days Later";
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  a {
+    text-decoration: none;
+    color: $mainTextColor;
+    &:hover {
+      color: $textColor;
+    }
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    background: url("../img/menu-sprite.png") no-repeat;
+    margin-bottom: 10px;
+  }
+}
+
+.about-cafe-menu,
+.coffee-menu,
+.menu-menu,
+.blog-menu,
+.contact-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px dotted $mainTextColor;
+  padding: 0 5%;
+}
+
+.contact-menu {
+  border-right: none;
+}
+
+.about-cafe-menu {
+  .icon {
+    background-position: -25px -10px;
+  }
+}
+
+.coffee-menu {
+  .icon {
+    background-position: -125px -10px;
+  }
+}
+
+.menu-menu {
+  .icon {
+    background-position: -225px -10px;
+  }
+}
+
+.blog-menu {
+  .icon {
+    background-position: -325px -10px;
+  }
+}
+
+.contact-menu {
+  .icon {
+    background-position: -425px -10px;
+  }
+}
+
+
+/*MAIN*/
+
+#main {
+  height: 720px;
+  background-image: url("../img/Your SLIDER image her.png");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  article {
+    width: 33%;
+    height: 25%;
+    padding: 1%;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: $mainTextColor;
+    border-top: 4px solid $textColor;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  $blockWidth: 100%;
+  .navigation,
+  #main,
+  #about-cafe,
+  #coffee,
+  #menu,
+  #blog,
+  #contact {
+    width: $blockWidth;
+  }
+  #main {
+    article {
+      overflow: scroll;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+  .coffee-shop,
+  .page-menu {
+    display: none;
+  }
+}
