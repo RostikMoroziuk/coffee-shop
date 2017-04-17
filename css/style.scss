@@ -36,7 +36,10 @@ footer {
 }
 
 main {
-  margin-top: 180px;
+  .navigation-clearfix {
+    width: 100%;
+    height: 180px;
+  }
 }
 
 #about-cafe,
