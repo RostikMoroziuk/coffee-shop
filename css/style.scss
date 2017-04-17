@@ -193,11 +193,22 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-  .menu-btn {
-    display: block;
+  .navigation {
+    .coffee-shop,
+    .page-menu {
+      display: none;
+    }
+    .menu-btn {
+      display: block;
+      height: 30%;
+      width: 100%;
+      text-align: left;
+      background-color: $backgroundColor;
+      border: none;
+      padding-left: 2%;
+    }
   }
-  .coffee-shop,
-  .page-menu {
-    display: none;
+  main {
+    margin-top: 50px;
   }
 }
