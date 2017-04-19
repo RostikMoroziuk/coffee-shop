@@ -295,6 +295,16 @@ main {
   flex-direction: column;
 }
 
+.tabs {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    figure {
+      margin: 2%;
+      text-align:center;
+    }
+  }
+}
 
 /*MEDIA QUERIES*/
 
