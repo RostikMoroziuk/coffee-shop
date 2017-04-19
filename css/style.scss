@@ -4,6 +4,7 @@ $blockWidth: 85%;
 $textColor: #dc3413;
 $mainTextColor: #cc9966;
 $backgroundColor: #281c13;
+$buttonColor: #ed4e2e;
 * {
   padding: 0;
   margin: 0;
@@ -42,6 +43,26 @@ main {
   }
 }
 
+.page-header {
+  font-family: "28 Days Later";
+  font-size: 55px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 5% 0;
+}
+
+.btn {
+  padding: 1% 2%;
+  color: white;
+  background-color: $buttonColor;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: darken($buttonColor, 30%);
+  }
+}
+
 #about-cafe,
 #coffee,
 #menu,
@@ -53,6 +74,15 @@ main {
 
 #main {
   width: 100%;
+}
+
+#about-cafe,
+#coffee,
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#000, 0.85);
 }
 
 
@@ -185,31 +215,23 @@ main {
 /*ABOUT CAFE*/
 
 #about-cafe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 830px;
-  background-color: rgba(#000, 0.85);
-  img {
-    width: 50%;
+  padding: 10% 0;
+  .line {
+    width: 20%;
   }
 }
 
 .about-cafe-description {
   flex-basis: 30%;
   h1 {
-    font-family: "28 Days Later";
-    font-size: 55px;
-    font-weight: 400;
     text-align: left;
-    text-transform: uppercase;
-    margin-bottom: 10%;
   }
   p {
     font-size: 28px;
     font-style: italic;
     text-align: left;
-    margin-bottom: 5%;
+    margin: 5% 0;
+    padding: 0;
   }
   .link-icon {
     width: 50px;
@@ -227,6 +249,54 @@ main {
     background-position: -50px 0;
   }
 }
+
+
+/*COFfEE*/
+
+#coffee {
+  padding: 10% 0;
+  .coffee-content {
+    display: flex;
+    flex-basis: 80%;
+  }
+  .image {
+    flex-basis: 45%;
+    margin: 0 5% 0 0;
+  }
+  .info {
+    align-self: flex-start;
+    flex-basis: 60%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.info {
+  .btn {
+    display: inline-block;
+    margin-right: 5%;
+  }
+  p {
+    color: white;
+    margin: 0 0 5%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .buttons {
+    margin: 0 0 5%;
+  }
+}
+
+/*MENU*/
+#menu {
+  padding: 5%;
+  flex-direction: column;
+}
+
+
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 900px) {
   $blockWidth: 100%;
@@ -268,6 +338,12 @@ main {
     }
     h1 {
       text-align: center;
+    }
+  }
+  .coffee-content {
+    flex-direction: column;
+    .buttons {
+      margin-top: 5%;
     }
   }
 }

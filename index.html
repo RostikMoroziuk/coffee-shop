@@ -82,12 +82,12 @@
       </ul>
     </div>
   </nav>
-
   <!-- Site Overlay затемнення всього сайту під час відкривання меню -->
   <div class="site-overlay"></div>
-
-  <main id="container"><!--ідентифікатор для зміщення контенту при відкриванні меню-->
-    <div class="navigation-clearfix"></div><!--заміщення меню з фіксованим позиціонуванням-->
+  <main id="container">
+    <!--ідентифікатор для зміщення контенту при відкриванні меню-->
+    <div class="navigation-clearfix"></div>
+    <!--заміщення меню з фіксованим позиціонуванням-->
     <section id="main">
       <article>
         <h3>Lorem ipsum</h3>
@@ -104,7 +104,8 @@
     </section>
     <section id="about-cafe">
       <article class="about-cafe-description">
-        <h1>about cafe</h1>
+        <h1 class="page-header">about cafe</h1>
+        <img src="img/line.png" class="line">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, porro!</p>
         <a href="https://www.facebook.com/" class="fb">
           <div class="link-icon"></div>
@@ -116,8 +117,109 @@
       <img src="img/Ellipse 1.png">
     </section>
     <section id="coffee">
+      <div class="coffee-content">
+        <figure class="image">
+          <img src="img/coffee-751619_1280.png">
+        </figure>
+        <section class="info">
+          <div class="buttons">
+            <a href="#history">
+              <button class="btn">
+                history
+              </button>
+            </a>
+            <a href="#facts">
+              <button class="btn">
+                facts
+              </button>
+            </a>
+          </div>
+          <p id="history">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perferendis sint facilis minus atque harum fugiat sed porro quia voluptate, consequatur tempore unde, voluptas dignissimos itaque magnam delectus repellat maiores.</span><span>Nobis, quo, dolore obcaecati illum eligendi sunt ducimus quis alias laboriosam cum et, officia unde. Doloribus repellendus similique nam, consectetur, pariatur laborum voluptatum beatae officia, nisi earum aperiam, nesciunt unde.</span>
+          </p>
+          <p id="facts">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perferendis sint facilis minus atque harum fugiat sed porro quia voluptate, consequatur tempore unde, voluptas dignissimos itaque magnam delectus repellat maiores.</span><span>Nobis, quo, dolore obcaecati illum eligendi sunt ducimus quis alias laboriosam cum et, officia unde. Doloribus repellendus similique nam, consectetur, pariatur laborum voluptatum beatae officia, nisi earum aperiam, nesciunt unde.</span>
+          </p>
+        </section>
+      </div>
     </section>
     <section id="menu">
+      <h1 class="page-header">coffee menu</h1>
+      <img src="img/line.png" class="line">
+      <div class="tabs">
+        <label>
+          all
+          <input type="radio" name="tabs" id="all" checked>
+        </label>
+        <label>
+          coffee
+          <input type="radio" name="tabs" id="coffee">
+        </label>
+        <label>
+          blended refreshment
+          <input type="radio" name="tabs" id="blended-refreshment">
+        </label>
+        <label>
+          coffee-free beverages
+          <input type="radio" name="tabs" id="coffee-free">
+        </label>
+        <section id="all-menu" class="content">
+          <figure>
+            <img src="img/honey_macchiato.png" alt="honey macchiato">
+            <figcaption>honey macchiato</figcaption>
+          </figure>
+          <figure>
+            <img src="img/caffeamericano.png" alt="coffee americano">
+            <figcaption>coffee americano</figcaption>
+          </figure>
+          <figure>
+            <img src="img/coconutcreme.png" alt="coconut creme">
+            <figcaption>coconut creme</figcaption>
+          </figure>
+          <figure>
+            <img src="img/mocha_javiva.jpg" alt="mocha">
+            <figcaption>mocha</figcaption>
+          </figure>
+          <figure>
+            <img src="img/hotchocolate.png" alt="hotchocolate.png">
+            <figcaption>hotchocolate.png</figcaption>
+          </figure>
+          <figure>
+            <img src="img/vanilla_steamer.png" alt="vanilla streamer">
+            <figcaption>vanilla streamer</figcaption>
+          </figure>
+        </section>
+        <section id="coffee-menu" class="content">
+          <figure>
+            <img src="img/honey_macchiato.png" alt="honey macchiato">
+            <figcaption>honey macchiato</figcaption>
+          </figure>
+          <figure>
+            <img src="img/caffeamericano.png" alt="coffee americano">
+            <figcaption>coffee americano</figcaption>
+          </figure>
+        </section>
+        <section id="blended-refreshment-menu" class="content">
+          <figure>
+            <img src="img/coconutcreme.png" alt="coconut creme">
+            <figcaption>coconut creme</figcaption>
+          </figure>
+          <figure>
+            <img src="img/mocha_javiva.jpg" alt="mocha">
+            <figcaption>mocha</figcaption>
+          </figure>
+        </section>
+        <section id="coffee-free-menu" class="content">
+          <figure>
+            <img src="img/hotchocolate.png" alt="hotchocolate.png">
+            <figcaption>hotchocolate.png</figcaption>
+          </figure>
+          <figure>
+            <img src="img/vanilla_steamer.png" alt="vanilla streamer">
+            <figcaption>vanilla streamer</figcaption>
+          </figure>
+        </section>
+      </div>
     </section>
     <section id="blog">
     </section>
