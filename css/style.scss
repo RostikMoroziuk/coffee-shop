@@ -49,6 +49,7 @@ main {
   font-weight: 400;
   text-transform: uppercase;
   margin: 5% 0;
+  text-align: center;
 }
 
 .btn {
@@ -289,22 +290,63 @@ main {
   }
 }
 
+
 /*MENU*/
+
 #menu {
   padding: 5%;
   flex-direction: column;
+  .line {
+    margin-bottom: 5%;
+  }
 }
 
 .tabs {
-  .content {
+  text-align: center;
+  width: 100%;
+  line-height: 250%;
+  .content,
+  input {
+    display: none;
+  }
+  input:checked+label {
+    background-color: $backgroundColor;
+    color: $textColor;
+    &:hover {
+      background-color: darken($buttonColor, 30%);
+      color: white;
+    }
+  }
+  label {
+    margin-right: 1%;
+    padding: 1%;
+    background-color: $buttonColor;
+    &:hover {
+      background-color: darken($buttonColor, 30%);
+    }
+  }
+  label,
+  figcaption {
+    color: white;
+    text-transform: capitalize;
+  }
+  #all:checked~#all-menu,
+  #cofee:checked~#cofee-menu,
+  #blended-refreshment:checked~#blended-refreshment-menu,
+  #cofee-free:checked~#coffee-free-menu {
+    //вибрати всі елементи які йдуть після заданого
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    width: 100%;
     figure {
       margin: 2%;
-      text-align:center;
+      text-align: center;
     }
   }
 }
+
 
 /*MEDIA QUERIES*/
 
