@@ -188,6 +188,9 @@ footer {
   a {
     color: white;
     text-decoration: none;
+    &:hover {
+      color: $backgroundColor;
+    }
   }
   h3 {
     font-size: 15px;
@@ -268,7 +271,7 @@ footer {
 #main {
   height: 100vh;
   background-image: url("../img/Your SLIDER image her.png");
-  background-size: 100% 100%;
+  background-size: 100% auto;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
