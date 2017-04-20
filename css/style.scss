@@ -292,6 +292,12 @@ footer {
   .line {
     width: 20%;
   }
+  .image {
+    flex-basis: 40%;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .about-cafe-description {
@@ -479,14 +485,14 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .navigation {
+  #nav-menu {
     .coffee-shop,
     .page-menu {
       display: none;
     }
     .menu-btn {
       display: block;
-      height: 30%;
+      height: 8vh;
       width: 100%;
       text-align: left;
       background-color: $backgroundColor;
@@ -494,16 +500,20 @@ footer {
       padding-left: 2%;
     }
   }
-  main {
-    margin-top: 50px;
+  #main {
+    margin-top: 8vh;
   }
   #about-cafe {
     flex-direction: column;
+    text-align: center;
     .about-cafe-description {
       width: 80%;
       margin-bottom: 5%;
     }
     h1 {
+      text-align: center;
+    }
+    p {
       text-align: center;
     }
   }

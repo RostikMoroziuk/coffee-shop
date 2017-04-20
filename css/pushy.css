@@ -1,13 +1,10 @@
-/*! Pushy - v1.1.0 - 2017-1-30
-* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/pushy/
-* by Christopher Yee */
-/* Menu Appearance */
+@import url("../font/stylesheet.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .pushy {
   position: fixed;
   width: 200px;
   height: 100%;
-  top: 0;
+  top: 8vh;
   z-index: 9999;
   background: #191918;
   overflow: auto;
@@ -16,12 +13,14 @@
 }
 .pushy a {
   display: block;
-  color: #b3b3b1;
-  padding: 15px 30px;
+  color: #cc9966;
+  padding: 0 5%;
   text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "28 Days Later";
 }
 .pushy a:hover {
-  color: #FFF;
+  color: #dc3413;
 }
 .pushy ul:first-child {
   margin-top: 10px;
