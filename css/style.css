@@ -1,0 +1,438 @@
+@import url("../font/stylesheet.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #dc3413; }
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: url("../img/beans-coffee-kitchen-2742.jpg") repeat-y;
+  background-size: 100% 100%;
+  min-width: 226px; }
+
+.navigation,
+main {
+  width: 85%;
+  height: 100%;
+  min-width: 226px; }
+
+main {
+  flex: 1; }
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #dc3413;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+
+.page-header {
+  font-family: "28 Days Later";
+  font-size: 55px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 5% 0;
+  text-align: center; }
+
+.btn {
+  padding: 1% 2%;
+  color: white;
+  background-color: #ed4e2e;
+  text-transform: uppercase;
+  border: none;
+  outline: none; }
+  .btn:hover {
+    background-color: #781d0a; }
+
+.input {
+  border: none;
+  border-bottom: 2px dotted #cc9966;
+  padding: 1% 0;
+  color: #dc3413;
+  background-color: transparent;
+  outline: none;
+  margin: 5% 0;
+  width: 100%; }
+
+::-webkit-input-placeholder {
+  color: #dc3413;
+  font-style: italic; }
+
+::-moz-placeholder {
+  color: #dc3413;
+  font-style: italic; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #dc3413;
+  font-style: italic; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #dc3413;
+  font-style: italic; }
+
+#about-cafe,
+#coffee,
+#menu,
+#blog,
+#contact {
+  width: 100%;
+  margin-top: 20px; }
+
+#main {
+  width: 100%; }
+
+#about-cafe,
+#coffee,
+#menu,
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85); }
+
+/*NAVIGATION*/
+.navigation {
+  display: flex;
+  justify-content: center; }
+  .navigation .page-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navigation a {
+    text-decoration: none; }
+
+#nav-menu {
+  height: 15vh;
+  position: fixed; }
+  #nav-menu .coffee-shop {
+    height: 100%;
+    width: 20%;
+    position: relative;
+    background-color: #dc3413;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #nav-menu .coffee-shop img {
+      width: 90%; }
+    #nav-menu .coffee-shop a {
+      text-align: center; }
+  #nav-menu .page-menu {
+    background-color: #281c13;
+    width: 80%;
+    justify-content: space-around; }
+    #nav-menu .page-menu a {
+      color: #cc9966; }
+      #nav-menu .page-menu a:hover {
+        color: #dc3413; }
+    #nav-menu .page-menu h3 {
+      font-family: "28 Days Later";
+      font-size: 22px; }
+  #nav-menu .menu-btn {
+    display: none; }
+
+#nav-footer {
+  width: 100%; }
+  #nav-footer a {
+    color: white;
+    text-decoration: none; }
+    #nav-footer a:hover {
+      color: #281c13; }
+  #nav-footer h3 {
+    font-size: 15px;
+    padding: 0;
+    margin: 0; }
+
+.icon,
+.link-icon {
+  width: 50px;
+  height: 50px; }
+
+.page-menu h3 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap; }
+.page-menu .icon {
+  background: url("../img/menu-sprite.png") no-repeat;
+  margin-bottom: 10px; }
+
+.main-menu,
+.about-cafe-menu,
+.coffee-menu,
+.menu-menu,
+.blog-menu,
+.contact-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%; }
+
+.contact-menu {
+  border-right: none; }
+
+.about-cafe-menu .icon {
+  background-position: -25px -10px; }
+
+.coffee-menu .icon {
+  background-position: -125px -10px; }
+
+.menu-menu .icon {
+  background-position: -225px -10px; }
+
+.blog-menu .icon {
+  background-position: -325px -10px; }
+
+.contact-menu .icon {
+  background-position: -425px -10px; }
+
+/*MAIN*/
+#main {
+  height: 100vh;
+  background-image: url("../img/Your SLIDER image her.png");
+  background-size: 100% auto;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 15vh; }
+  #main article {
+    width: 33%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #cc9966;
+    border-top: 4px solid #dc3413;
+    overflow-x: hidden;
+    overflow-y: auto; }
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; }
+
+/*ABOUT CAFE*/
+#about-cafe {
+  padding: 10% 0; }
+  #about-cafe .line {
+    width: 20%; }
+  #about-cafe .image {
+    flex-basis: 40%; }
+    #about-cafe .image img {
+      width: 100%; }
+
+.about-cafe-description {
+  flex-basis: 30%; }
+  .about-cafe-description h1 {
+    text-align: left; }
+  .about-cafe-description p {
+    font-size: 28px;
+    font-style: italic;
+    text-align: left;
+    margin: 5% 0;
+    padding: 0; }
+  .about-cafe-description .link-icon {
+    width: 50px;
+    height: 50px;
+    background: url("../img/links.png") no-repeat; }
+  .about-cafe-description .fb,
+  .about-cafe-description .twitter {
+    display: inline-block; }
+  .about-cafe-description .fb .link-icon {
+    background-position: 0 0; }
+  .about-cafe-description .twitter .link-icon {
+    background-position: -50px 0; }
+
+/*COFfEE*/
+#coffee {
+  padding: 10% 0; }
+  #coffee .coffee-content {
+    display: flex;
+    flex-basis: 80%; }
+  #coffee .image {
+    flex-basis: 45%;
+    margin: 0 5% 0 0; }
+  #coffee .info {
+    align-self: flex-start;
+    flex-basis: 60%; }
+  #coffee img {
+    width: 100%; }
+
+.info .btn {
+  display: inline-block;
+  margin-right: 5%; }
+.info p {
+  color: white;
+  margin: 0 0 5%; }
+  .info p:last-child {
+    margin-bottom: 0; }
+.info .buttons {
+  margin: 0 0 5%; }
+
+/*MENU*/
+#menu {
+  padding: 5%;
+  flex-direction: column; }
+  #menu .line {
+    margin-bottom: 5%; }
+
+.tabs {
+  text-align: center;
+  width: 100%;
+  line-height: 250%; }
+  .tabs .content,
+  .tabs input {
+    display: none; }
+  .tabs input:checked + label {
+    background-color: #281c13;
+    color: #dc3413; }
+    .tabs input:checked + label:hover {
+      background-color: #781d0a;
+      color: white; }
+  .tabs label {
+    margin-right: 1%;
+    padding: 1%;
+    background-color: #ed4e2e; }
+    .tabs label:hover {
+      background-color: #781d0a; }
+  .tabs label,
+  .tabs figcaption {
+    color: white;
+    text-transform: capitalize; }
+  .tabs #all:checked ~ #all-menu,
+  .tabs #cofee:checked ~ #cofee-menu,
+  .tabs #blended-refreshment:checked ~ #blended-refreshment-menu,
+  .tabs #cofee-free:checked ~ #coffee-free-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    width: 100%; }
+    .tabs #all:checked ~ #all-menu figure,
+    .tabs #cofee:checked ~ #cofee-menu figure,
+    .tabs #blended-refreshment:checked ~ #blended-refreshment-menu figure,
+    .tabs #cofee-free:checked ~ #coffee-free-menu figure {
+      margin: 2%;
+      text-align: center; }
+
+/*CONTACT*/
+#contact {
+  padding: 10%;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 5%; }
+  #contact .text {
+    flex-basis: 40%;
+    margin-right: 5%; }
+  #contact form {
+    flex-basis: 40%; }
+  #contact .page-header {
+    text-align: left; }
+  #contact .line {
+    margin-bottom: 5%; }
+  #contact p {
+    color: white;
+    font-style: italic;
+    font-size: 130%;
+    margin-bottom: 5%; }
+  #contact .image {
+    width: 100%; }
+  #contact .btn {
+    padding: 1% 5%; }
+
+/*FOOTER*/
+.footer .copyright {
+  background-color: #7e1e0b; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 900px) {
+  .navigation,
+  main {
+    width: 100%; } }
+@media screen and (max-width: 800px) {
+  #nav-menu .coffee-shop,
+  #nav-menu .page-menu {
+    display: none; }
+  #nav-menu .menu-btn {
+    display: block;
+    height: 8vh;
+    width: 100%;
+    text-align: left;
+    background-color: #281c13;
+    border: none;
+    padding-left: 2%; }
+
+  #main {
+    margin-top: 8vh; }
+
+  #about-cafe {
+    flex-direction: column;
+    text-align: center; }
+    #about-cafe .about-cafe-description {
+      width: 80%;
+      margin-bottom: 5%; }
+    #about-cafe h1 {
+      text-align: center; }
+    #about-cafe p {
+      text-align: center; }
+
+  .coffee-content {
+    flex-direction: column; }
+    .coffee-content .buttons {
+      margin-top: 5%; }
+
+  #contact {
+    flex-direction: column;
+    text-align: center; }
+    #contact .text {
+      margin-right: 0;
+      width: 100%; }
+    #contact .page-header {
+      text-align: center; }
+    #contact .input {
+      width: 60%; }
+
+  .footer {
+    height: 100%; }
+    .footer .navigation {
+      display: none; } }
+@media screen and (max-width: 600px) {
+  #main {
+    padding: 10% 3%; }
+    #main .articles {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%; }
+    #main article {
+      width: 60%;
+      height: 25vh;
+      overflow-y: auto;
+      align-self: flex-end; }
+    #main article:nth-child(2n) {
+      align-self: flex-start; }
+
+  #menu figure img {
+    width: 100%; } }
+@media screen and (max-height: 600px) {
+  #nav-menu h3 {
+    font-size: 15px !important; }
+  #nav-menu .page-menu a {
+    display: flex;
+    flex-direction: row;
+    padding: 0; }
+  #nav-menu .icon {
+    margin-right: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
