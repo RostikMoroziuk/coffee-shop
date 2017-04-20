@@ -77,7 +77,6 @@
   <main id="container">
     <!--ідентифікатор для зміщення контенту при відкриванні меню-->
     <div class="navigation-clearfix"></div>
-    <!--заміщення меню з фіксованим позиціонуванням-->
     <section id="main">
       <article>
         <h3>Lorem ipsum</h3>
@@ -214,13 +213,39 @@
         <input type="text" name="name" placeholder="Name" class="input-name input">
         <input type="email" name="email" placeholder="Email address" class="input">
         <input type="text" name="subject" placeholder="Subject" class="input">
-        <textarea placeholder="Message" name="msg" class="input" required rows="4"></textarea><br>
+        <textarea placeholder="Message" name="msg" class="input" required rows="4"></textarea>
+        <br>
         <input type="submit" name="submit" class="btn" value="send">
       </form>
     </section>
   </main>
   <footer class="footer">
-    
+    <nav class="navigation" id="nav-footer">
+      <section class="page-menu">
+        <a href="#main" class="main-menu">
+          <h3>home</h3>
+        </a>
+        <div>::</div>
+        <a href="#about-cafe" class="about-cafe-menu">
+          <h3>about cafe</h3>
+        </a>
+        <div>::</div>
+        <a href="#coffee" class="coffee-menu">
+          <h3>coffee</h3>
+        </a>
+        <div>::</div>
+        <a href="#menu" class="menu-menu">
+          <h3>menu</h3>
+        </a>
+        <div>::</div>
+        <a href="#contact" class="contact-menu">
+          <h3>contact</h3>
+        </a>
+      </section>
+    </nav>
+    <div class="copyright">
+      <small>&copy;Copyright 2017 Moroziuk Rostyslav</small>
+    </div>
   </footer>
   <script src="js/links.js"></script>
   <script src="js/pushy.min.js"></script>
