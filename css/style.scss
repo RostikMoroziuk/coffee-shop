@@ -280,10 +280,11 @@ footer {
     width: 33%;
     height: 20%;
     padding: 1%;
-    vertical-align: middle;
     background-color: rgba(0, 0, 0, 0.75);
     color: $mainTextColor;
     border-top: 4px solid $textColor;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
 
@@ -464,7 +465,9 @@ footer {
   }
 }
 
+
 /*FOOTER*/
+
 .footer {
   .copyright {
     background-color: darken($textColor, 20%);
@@ -479,11 +482,6 @@ footer {
   .navigation,
   main {
     width: $blockWidth;
-  }
-  #main {
-    article {
-      overflow: scroll;
-    }
   }
 }
 
@@ -541,6 +539,23 @@ footer {
   }
 }
 
+@media screen and (max-width:600px) {
+  #main {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10% 3%;
+    article {
+      width: 60%;
+      overflow-y: auto;
+      align-self: flex-end;
+    }
+    article:nth-child(2n) {
+      align-self: flex-start;
+    }
+  }
+}
+
 @media screen and (max-height: 600px) {
   #nav-menu {
     h3 {
@@ -549,6 +564,7 @@ footer {
     .page-menu a {
       display: flex;
       flex-direction: row;
+      padding: 0;
     }
     .icon {
       margin-right: 10px;
