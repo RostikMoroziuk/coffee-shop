@@ -46,26 +46,27 @@
     <div class="pushy-content">
       <ul>
         <li class="pushy-link">
+          <a href="#main" class="main-menu">
+            <h3>home</h3>
+          </a>
+        </li>
+        <li class="pushy-link">
           <a href="#about-cafe" class="about-cafe-menu">
-            <div class="icon"></div>
             <h3>about cafe</h3>
           </a>
         </li>
         <li class="pushy-link">
           <a href="#coffee" class="coffee-menu">
-            <div class="icon"></div>
             <h3>coffee</h3>
           </a>
         </li>
         <li class="pushy-link">
           <a href="#menu" class="menu-menu">
-            <div class="icon"></div>
             <h3>menu</h3>
           </a>
         </li>
         <li class="pushy-link">
           <a href="#contact" class="contact-menu">
-            <div class="icon"></div>
             <h3>contact</h3>
           </a>
         </li>
@@ -77,28 +78,30 @@
   <main id="container">
     <!--ідентифікатор для зміщення контенту при відкриванні меню-->
     <section id="main">
-      <article>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam veritatis quam accusantium, est nesciunt, ad.</p>
-      </article>
-      <article>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, tempora!</p>
-      </article>
-      <article>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quam, voluptates. Modi.</p>
-      </article>
+      <div class="articles">
+        <article>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam veritatis quam accusantium, est nesciunt, ad.</p>
+        </article>
+        <article>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, tempora!</p>
+        </article>
+        <article>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quam, voluptates. Modi.</p>
+        </article>
+      </div>
     </section>
     <section id="about-cafe">
       <article class="about-cafe-description">
         <h1 class="page-header">about cafe</h1>
         <img src="img/line.png" class="line">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, porro!</p>
-        <a href="https://www.facebook.com/" class="fb">
+        <a href="https://www.facebook.com/" class="fb" target="_blank">
           <div class="link-icon"></div>
         </a>
-        <a href="https://twitter.com" class="twitter">
+        <a href="https://twitter.com" class="twitter" target="_blank">
           <div class="link-icon"></div>
         </a>
       </article>
@@ -208,7 +211,7 @@
         <h1 class="page-header">contact us</h1>
         <img src="img/line.png" class="line">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, sapiente.</p>
-        <img src="img/morning-coffee-with-cooffee-bean.png" clas="image">
+        <img src="img/morning-coffee-with-cooffee-bean.png" class="image">
       </article>
       <form action="post">
         <input type="text" name="name" placeholder="Name" class="input-name input">
